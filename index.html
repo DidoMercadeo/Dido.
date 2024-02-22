@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>COMUNICACIÓN-INTERNA</title>
+</head> 
+<body>
+    <h1>COMUNICACIÓN INTERNA</h1>
+
+    <!-- pantalla inicial -->
+    <div id="pantalla-inicial">
+    <p class="titulo">Comunicación Interna</p>
+    <button class="btn" onclick="ComenzarJuego()">COMENZAR A JUGAR</button>
+</div>
+<!-- pantalla juego -->
+<div class="pantalla-juego" id="pantalla-juego">
+    <img src="img/bandera-colombia.jpg" alt="" id="imgBandera">
+    <div class="opciones">
+        <div class="opcion" id="op0" onclick="ComprobarRespuesta(0)">
+            <div class="letra" id="l0">A</div>
+            <div class="nombre" id="n0">OPCIÓN A</div>
+            </div>
+        <div class="opcion" id="op1" onclick="ComprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCIÓN B</div>
+            </div>
+        <div class="opcion" id="op2" onclick="ComprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCIÓN C</div>
+            </div>
+            <div class="opcion" id="op3" onclick="ComprobarRespuesta(3)">
+              <div class="letra" id="l3">D</div>
+              <div class="nombre" id="n3">OPCIÓN D</div>
+          </div>
+        </div>
+    </div>
+</div>
+<!-- PANTALLA FINAL-->
+<div id="pantalla-final">
+    <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+    <h2>INCORRECTAS: <span id="numIncorrectas">3</span></h2>
+    <button class="btn" hreft="#pantalla-inicial" onclick="VolverAlInicio()">VOLVER A JUGAR</button>
+</div>
+<section>
+<footer class="pie-pagina">
+      <small>&copy; 2024 <b>DIDO</b> - Todos los derechos reservados.</small>
+    
+    
+    </footer>
+   </section> 
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
